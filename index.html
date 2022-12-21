@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h1>Registration Form</h1>
+	</header>
+	<center>
+		<table border="5" width="500" height="200">
+			<thead>
+				<tr>
+					<th>Student Name</th>
+					<td><input placeholder="Enter Your Full Name" type="text" name="name" id="name"></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Skills</th>
+					<td><input placeholder="Enter the Skills you know" type="text" name="skill" id="skill"></td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td><input placeholder="Enter the Email" type="text" name="email" id="email"></td>
+				</tr>
+                <tr>
+                    <th>Gender</th>
+                    <td><input placeholder="Enter the Gender" type="text" name="Gender" id="gender"></td>
+                </tr>
+				<tr>
+					<th>Age</th>
+					<td><input placeholder="Enter your Age" type="text" name="age" id="age"></td>
+				</tr>
+				<tr id="btna">
+					<td colspan="2"><input type="button" name="button" id="btn" value="Submit Now" onclick="AddRow()"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table border="5" id="show">
+			<thead>
+				<tr>
+					<th>Student Full Name</th>
+					<th>Skills</th>
+					<th>Email</th>
+                    <th>Gender</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+		</table>
+	</center>
+	
+	<script src="main.js" defer> </script>
+</body>
+</html>
